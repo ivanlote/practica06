@@ -13,10 +13,10 @@ var mime = {
     'mp4' : 'video/mp4'
 };
 var conexion=mysql.createConnection({
-    host:'localhost',
-        user:'root',
-        password:'1234',
-        database:'practica'
+    host:'205.134.249.43',
+        user:'dcomputer1_steven',
+        password:'Eslj@1995',
+        database:'dcomputer1_practica'
     });
     conexion.connect(function (error){
         if (error)
