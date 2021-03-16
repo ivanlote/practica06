@@ -14,9 +14,10 @@ var mime = {
 };
 var conexion=mysql.createConnection({
     host:'205.134.249.43',
-        user:'dcomputer1_steven',
-        password:'Eslj@1995',
-        database:'dcomputer1_practica'
+    user:'dcomputer1_steven',
+    password:'Eslj@1995',
+    database:'dcomputer1_practica',
+    port: '3306',
     });
     conexion.connect(function (error){
         if (error)
@@ -31,6 +32,7 @@ var conexion=mysql.createConnection({
             camino='public/index.html';
         encaminar(pedido,respuesta,camino);
     });
+
 
     servidor.listen(3000);
 
