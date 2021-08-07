@@ -13,12 +13,13 @@ var mime = {
     'mp4' : 'video/mp4'
 };
 var conexion=mysql.createConnection({
-    host:'205.134.249.43',
-    user:'dcomputer1_steven',
-    password:'Eslj@1995',
-    database:'dcomputer1_practica',
-    port: '3306',
+    host:'sql10.freemysqlhosting.net',
+        port:3306,
+        user:'sql10429731',
+        password:'nIe6kGh83V',
+        database:'sql10429731'
     });
+    
     conexion.connect(function (error){
         if (error)
             console.log('Problemas de conexion con mysql');
@@ -96,7 +97,7 @@ function crear(respuesta) {
     });
     respuesta.writeHead(200, {'Content-Type': 'text/html'});
     respuesta.write('<!doctype html><html><head></head><body>'+
-                    'Se creo la tabla<br><a href="index.html">Retornar</a></body></html>');     
+                    'Se creo la tabla con exito<br><a href="index.html">Retornar</a></body></html>');     
     respuesta.end();    
 }
 function alta(pedido,respuesta) {
@@ -118,7 +119,7 @@ function alta(pedido,respuesta) {
       });       
       respuesta.writeHead(200, {'Content-Type': 'text/html'});
       respuesta.write('<!doctype html><html><head></head><body>'+
-                    'Se cargo el articulo<br><a href="index.html">Retornar</a></body></html>');     
+                    'Se cargo el articulo con exito<br><a href="index.html">Retornar</a></body></html>');     
       respuesta.end();
     });     
 }
